@@ -1,10 +1,10 @@
 export interface Profile {
 
   myName:string;
-  myprofession:string
-  imageprofile:string
+  myProfession:string
+  imageProfile:string
   linkedinProfile?:string
-  githubprofile?:string
+  githubProfile?:string
   slackProfile?:string
   aboutMe:string
 
