@@ -59,8 +59,8 @@ export class MainContentComponent {
       startDate:"Nov 2022",
       endDate:"April 2023",
       location:"Ottawa-Ontario",
-      role:"",
-      skills:["one"]
+      role:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer",
+      skills:["one", "two", "three", "four"]
 
     },
 
@@ -70,8 +70,8 @@ export class MainContentComponent {
       startDate:"Nov 2021",
       endDate:"Aug 2022",
       location:"Douala",
-      role:"",
-      skills:["one"]
+      role:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer",
+      skills:["one", "two", "three", "four"]
     }]
   }
 
