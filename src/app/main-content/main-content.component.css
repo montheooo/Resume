@@ -1,0 +1,10 @@
+.profile-image {
+  width: 200px;
+}
+
+.social-media-links {
+  display: inline-block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
