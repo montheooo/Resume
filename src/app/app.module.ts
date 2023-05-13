@@ -10,6 +10,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { EducationComponent } from './education/education.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EducationComponent } from './education/education.component';
     ExperienceComponent,
     ProfileComponent,
     SocialMediaComponent,
-    EducationComponent
+    EducationComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

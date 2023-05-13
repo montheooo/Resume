@@ -2,27 +2,18 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-
      <app-profile></app-profile>
-
      <app-social-media></app-social-media>
-
       <hr>
-
-    <div class="hide-layout-sm">
-      <app-education></app-education>
-    </div>
-
+        <div class="hide-layout-sm">
+          <app-education></app-education>
+        </div>
     </div>
     <div class="col-md-8">
-
-      <h3>About Me</h3>
-      <p>{{myData.profile.aboutMe}}</p>
-
-      <diV class="hide-layout-md">
-        <app-education></app-education>
-      </diV>
-
+      <app-about-me></app-about-me>
+        <diV class="hide-layout-md">
+          <app-education></app-education>
+        </diV>
       <app-experience></app-experience>
     </div>
   </div>
