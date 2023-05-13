@@ -3,38 +3,19 @@
   <div class="container">
     <div class="row vertical-center">
       <div class="col-md-5">
-        <ul>
-          <li>Email: {{myData.email}}</li>
-          <li>Phone: {{myData.phone}}</li>
-          <li>Website: {{myData.website}}</li>
-          <li>Address: {{myData.address}}</li>
-        </ul>
+        <app-contact-detail></app-contact-detail>
       </div>
       <div class="col-md-7">
-        <h3>Contact</h3>
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+        <app-contact-form></app-contact-form>
       </div>
     </div>
   </div>
 </footer>
+<!--Footer-->
 <hr>
 <div class="container text-center">
   <app-social-media></app-social-media>
   <p>&copy; 2023 Your Name. All rights reserved.</p>
 </div>
 
-<!--Footer-->
+

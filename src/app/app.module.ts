@@ -11,6 +11,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { EducationComponent } from './education/education.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
     ProfileComponent,
     SocialMediaComponent,
     EducationComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ContactDetailComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
