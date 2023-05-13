@@ -5,13 +5,17 @@
      <app-profile></app-profile>
      <app-social-media></app-social-media>
       <hr>
-        <div class="hide-layout-sm">
-          <app-education></app-education>
+        <div  class="hide-layout-sm">
+          <h3>Education</h3>
+          <div *ngFor="let edu of myData.education">
+            <app-education [education]="edu"></app-education>
+          </div>
         </div>
     </div>
     <div class="col-md-8">
       <app-about-me></app-about-me>
         <diV class="hide-layout-md">
+          <h3>Education</h3>
           <app-education></app-education>
         </diV>
       <h3>Experience</h3>
