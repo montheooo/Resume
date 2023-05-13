@@ -37,6 +37,7 @@
 
       <hr>
 
+    <div class="hide-layout-sm">
       <h3>Education</h3>
       <ul>
         <li>{{myData.education[0].organizationName}} - {{myData.education[0].certificateName}} ({{myData.education[0].startDate}}-{{myData.education[0].endDate}})</li>
@@ -44,57 +45,25 @@
         <li>{{myData.education[1].organizationName}} - {{myData.education[1].certificateName}} ({{myData.education[1].startDate}}-{{myData.education[1].endDate}})</li>
 
       </ul>
-
-      <h3>Contact</h3>
-        <ul>
-          <li>Email: {{myData.contact.email}}</li>
-          <li>Phone: {{myData.contact.phone}}</li>
-          <li>Website: {{myData.contact.website}}</li>
-          <li>Address: {{myData.contact.address}}</li>
-        </ul>
+    </div>
 
     </div>
     <div class="col-md-8">
+
       <h3>About Me</h3>
       <p>{{myData.profile.aboutMe}}</p>
 
-      <h3>Experience</h3>
-        <div class="card mb-3" >
-          <div class="row g-0">
+      <diV class="hide-layout-md">
+        <h3>Education</h3>
+        <ul>
+          <li>{{myData.education[0].organizationName}} - {{myData.education[0].certificateName}} ({{myData.education[0].startDate}}-{{myData.education[0].endDate}})</li>
 
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">{{myData.experience[0].position}}</h5>
-                <p class="card-text">{{myData.experience[0].role}}</p>
-                <p class="card-text"><small class="text-body-secondary">{{myData.experience[0].skills}}</small></p>
-              </div>
-            </div>
-            <div class="col-md-4 text-end">
-              <p class="card-text   mb-3"><small class="text-body-secondary">{{myData.experience[0].startDate}}</small>-<small class="text-body-secondary">{{myData.experience[0].endDate}}</small></p>
-              <h3>{{myData.experience[0].company}}</h3>
-              <p class="card-text   mb-3"><small class="text-body-secondary">{{myData.experience[0].location}}</small></p>
-            </div>
+          <li>{{myData.education[1].organizationName}} - {{myData.education[1].certificateName}} ({{myData.education[1].startDate}}-{{myData.education[1].endDate}})</li>
+        </ul>
+      </diV>
 
-          </div>
-        </div>
-        <div class="card mb-3" >
-          <div class="row g-0">
 
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">{{myData.experience[1].position}}</h5>
-                <p class="card-text">{{myData.experience[1].role}}</p>
-                <p class="card-text"><small class="text-body-secondary">{{myData.experience[1].skills}}</small></p>
-              </div>
-            </div>
-            <div class="col-md-4 text-end">
-              <p class="card-text   mb-3"><small class="text-body-secondary">{{myData.experience[1].startDate}}</small>-<small class="text-body-secondary">{{myData.experience[0].endDate}}</small></p>
-              <h3>{{myData.experience[1].company}}</h3>
-              <p class="card-text   mb-3"><small class="text-body-secondary">{{myData.experience[1].location}}</small></p>
-            </div>
-
-          </div>
-        </div>
+      <app-experience></app-experience>
     </div>
   </div>
 </div>
