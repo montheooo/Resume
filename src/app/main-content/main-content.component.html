@@ -14,7 +14,10 @@
         <diV class="hide-layout-md">
           <app-education></app-education>
         </diV>
-      <app-experience></app-experience>
+      <h3>Experience</h3>
+      <div *ngFor="let data of myData.experience">
+        <app-experience [exp]="data"></app-experience>
+      </div>
     </div>
   </div>
 </div>
