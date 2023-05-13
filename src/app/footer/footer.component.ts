@@ -9,11 +9,5 @@ import { Contact } from '../Models/Contact';
 export class FooterComponent {
 
   @Input()
-  myData: Contact =
-  {
-    email:"montheooo@yahoo.fr",
-    phone:"+1 438-969-7973",
-    website:"intelcameroun.net",
-    address:"Ottawa-Ontario"
-  }
+  footer!: Contact;
 }

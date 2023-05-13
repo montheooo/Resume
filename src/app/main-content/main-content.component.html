@@ -5,22 +5,22 @@
      <app-profile [profile]="myData.profile"></app-profile>
      <app-social-media></app-social-media>
       <hr>
-        <div  class="hide-layout-sm">
-          <h3>Education</h3>
-          <div *ngFor="let edu of myData.education">
-            <app-education [education]="edu"></app-education>
-          </div>
+      <div  class="hide-layout-sm">
+        <h3>Education</h3>
+        <div *ngFor="let edu of myData.education">
+          <app-education [education]="edu"></app-education>
         </div>
+      </div>
     </div>
     <div class="col-md-8">
-      <app-about-me></app-about-me>
-        <diV class="hide-layout-md">
-          <h3>Education</h3>
-          <div *ngFor="let edu of myData.education">
-            <app-education [education]="edu"></app-education>
-          </div>
+      <app-about-me [about]="myData.profile"></app-about-me>
+      <diV class="hide-layout-md">
+        <h3>Education</h3>
+        <div *ngFor="let edu of myData.education">
+          <app-education [education]="edu"></app-education>
+        </div>
 
-        </diV>
+      </diV>
       <h3>Experience</h3>
       <div *ngFor="let data of myData.experience">
         <app-experience [exp]="data"></app-experience>
