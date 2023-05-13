@@ -9,6 +9,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     MainContentComponent,
     ExperienceComponent,
     ProfileComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

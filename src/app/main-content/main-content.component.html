@@ -10,13 +10,7 @@
       <hr>
 
     <div class="hide-layout-sm">
-      <h3>Education</h3>
-      <ul>
-        <li>{{myData.education[0].organizationName}} - {{myData.education[0].certificateName}} ({{myData.education[0].startDate}}-{{myData.education[0].endDate}})</li>
-
-        <li>{{myData.education[1].organizationName}} - {{myData.education[1].certificateName}} ({{myData.education[1].startDate}}-{{myData.education[1].endDate}})</li>
-
-      </ul>
+      <app-education></app-education>
     </div>
 
     </div>
@@ -26,14 +20,8 @@
       <p>{{myData.profile.aboutMe}}</p>
 
       <diV class="hide-layout-md">
-        <h3>Education</h3>
-        <ul>
-          <li>{{myData.education[0].organizationName}} - {{myData.education[0].certificateName}} ({{myData.education[0].startDate}}-{{myData.education[0].endDate}})</li>
-
-          <li>{{myData.education[1].organizationName}} - {{myData.education[1].certificateName}} ({{myData.education[1].startDate}}-{{myData.education[1].endDate}})</li>
-        </ul>
+        <app-education></app-education>
       </diV>
-
 
       <app-experience></app-experience>
     </div>
