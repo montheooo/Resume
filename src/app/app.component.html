@@ -1,11 +1,45 @@
-
+<!--Navbar Component-->
 <app-navbar>
 </app-navbar>
+<!-- End Navbar Component-->
 
-<app-main-content [myData]="data">
+<!--Main Component-->
+<app-main-content *ngIf="(data$ | async) as cards" [myData]="cards">
 </app-main-content>
+<!-- End Main Component-->
 
-<app-footer [footer]="data.contact">
+<!--Footer Component-->
+<app-footer *ngIf="(data$ | async) as data" [footer]="data.contact">
 </app-footer>
+<!--End Footer Component-->
 
+<!--Loading-->
+<div class="loading" *ngIf="!(data$ | async)">
+
+  <div class="spinner-grow text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-secondary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-light" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-dark" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<!--End Loading-->
 
