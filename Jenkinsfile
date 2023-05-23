@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('list directory') {
-      steps {
-        sh 'ls -al'
+      parallel {
+        stage('list directory') {
+          steps {
+            sh 'ls -al'
+          }
+        }
+
+        stage('front-end unit tests') {
+          steps {
+            sh 'npm install && npm test'
+          }
+        }
+
       }
     }
 
