@@ -4,17 +4,17 @@
 <!-- End Navbar Component-->
 
 <!--Main Component-->
-<app-main-content *ngIf="(data$ | async) as cards" [myData]="cards">
+<app-main-content *ngIf="data" [myData]="data">
 </app-main-content>
 <!-- End Main Component-->
 
 <!--Footer Component-->
-<app-footer *ngIf="(data$ | async) as data" [footer]="data.contact">
+<app-footer *ngIf="data" [footer]="data.contact">
 </app-footer>
 <!--End Footer Component-->
 
 <!--Loading-->
-<div class="loading" *ngIf="!(data$ | async)">
+<div class="loading" *ngIf="!(data)">
 
   <div class="spinner-grow text-primary" role="status">
     <span class="visually-hidden">Loading...</span>

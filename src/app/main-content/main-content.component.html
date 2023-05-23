@@ -21,11 +21,19 @@
         </div>
 
       </diV>
-      <h3>Experience</h3>
-      <div *ngFor="let data of myData.experience">
-        <app-experience [exp]="data"></app-experience>
+
+      <div class="container">
+        <div class="row gx-xxl-5 gy-xxl-2">
+          <h3>Experience</h3>
+            <div class="col-xxl-6" *ngFor="let data of myData.experience">
+              <app-experience [exp]="data"></app-experience>
+            </div>
+        </div>
       </div>
+
     </div>
   </div>
+
+
 </div>
 <!--End Main Content-->
