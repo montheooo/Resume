@@ -17,7 +17,7 @@ pipeline {
 
         stage('unit tests') {
           steps {
-            sh 'npm install && ng test --no-watch --no-progress'
+            sh 'npm install && npm test --no-watch --no-progress'
           }
         }
 
